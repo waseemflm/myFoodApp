@@ -1,0 +1,113 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ee5f06;
+    color: #fff;
+    padding: 1rem;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 1rem;
+}
+
+.image-gallery {
+    margin-bottom: 2rem;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.circle-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h2 {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.button-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.large-button {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.order-btn-container {
+    text-align: center;
+    padding: 1rem;
+}
+
+.order-btn {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.order-btn:hover {
+    background-color: #ff3d30;
+}
+
+@media (max-width: 768px) {
+    .circle-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .large-button {
+        width: 150px;
+    }
+
+    .order-btn {
+        padding: 0.75rem 1.5rem;
+    }
+}
